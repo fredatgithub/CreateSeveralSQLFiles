@@ -11,6 +11,8 @@ namespace CreateSeveralFile
         private static void Main()
         {
             Action<string> display = Console.WriteLine;
+            display("Create several SQL files for each database version 1.0");
+            display(string.Empty);
             var listeServeurs = new List<string>();
             string line = string.Empty;
             if (Settings.Default.ServerListFileName.Trim() == string.Empty)
